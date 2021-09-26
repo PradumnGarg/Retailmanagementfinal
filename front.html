@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <button  onclick="Inside()" id ="bt"  type="button" class="btn btn-primary">Step Inside</button>
+</body>
+
+<style>
+        body {
+          background-image: url('garg.png');
+        }
+
+        #bt{
+            left: 625px;
+            top: 360px;
+            position: relative;
+        }
+</style>
+<script>
+  function Inside(){
+  var key = prompt("Please enter key to access the database of the company");
+
+if (key.localeCompare("Aarpga@#4050")==0) {
+  
+    location.href = 'http://localhost/myproject/back.php';
+}else{
+  window.alert("Wrong key Entered");
+  window.close();
+}
+  }
+</script>
+
+
+</html>
